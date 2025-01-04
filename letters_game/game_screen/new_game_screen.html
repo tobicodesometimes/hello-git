@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Game Screen</title>
+    <link rel="stylesheet" href="new_game_screen.css">
+</head>
+<body>
+    <form id="new-game-form" method="get">
+        <h2>New Game</h2>
+    
+        <!-- Player Rules -->
+        <label for="player-rules">Player rules:</label>
+        <textarea id="player-rules" name="playerRules" rows="4"></textarea>
+    
+        <!-- Number of Players -->
+        <label for="num-players">Number of players:</label>
+        <select id="num-players" name="numPlayers">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    
+        <!-- Time Limit Per Turn -->
+        <label for="turn-time-limit">Time limit for each turn (seconds):</label>
+        <input type="number" id="turn-time-limit" name="turnTimeLimit" min="30" max="600" value="30">
+    
+        <!-- Bluff Feature -->
+        <div class="checkbox-container">
+            <input type="checkbox" id="enable-bluff" name="enableBluff">
+            <label for="enable-bluff">Bluff feature</label>
+        </div>
+    
+        <!-- Rounds Per Game -->
+        <label for="rounds-per-game">Number of rounds per game:</label>
+        <input type="number" id="rounds-per-game" name="numRounds" min="1" max="10" value="5">
+    
+        <!-- Game Time Limit -->
+        <label for="game-time-limit">Time limit for the duration of the game (minutes):</label>
+        <input type="number" id="game-time-limit" name="gameTimeLimit" min="5" max="180" value="30">
+    
+        <!-- No Time Limit -->
+        <div class="checkbox-container">
+            <input type="checkbox" id="no-time-limit" name="noTimeLimit">
+            <label for="no-time-limit">No time limit</label>
+        </div>
+    
+        <!-- Submit Button -->
+        <button type="submit">Start Game</button>
+    </form>
+    
+
+    <!-- Link to external JavaScript -->
+    <script src="new_game_screen.js"></script>
+</body>
+</html>

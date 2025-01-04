@@ -1,0 +1,30 @@
+/* Styling the box */
+.box {
+    width: 300px;
+    height: 150px;
+    background-color: lightblue;
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;           /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+}
+
+/* Styling the button */
+.box-button {
+    background-color: blue;   /* Change button color */
+    color: white;              /* White text */
+    border: none;              /* Remove default border */
+    padding: 10px 20px;        /* Add padding */
+    border-radius: 15px;       /* Rounded corners */
+    font-size: 16px;           /* Text size */
+    cursor: pointer;           /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth color change on hover */
+}
+
+/* Change button color on hover */
+.box-button:hover {
+    background-color: darkblue; /* Dark green on hover */
+}
+

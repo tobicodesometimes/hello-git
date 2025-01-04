@@ -1,0 +1,78 @@
+/* General body styling */
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form container styling */
+form {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    width: 400px;
+    text-align: center;
+}
+
+/* Heading styling */
+h2 {
+    color: darkblue;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin: 10px 0 5px 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Input, select, and textarea styling */
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Checkbox alignment */
+input[type="checkbox"] {
+    width: auto;
+    margin: 0 5px 10px 0;
+    vertical-align: middle;
+}
+
+/* Submit button styling */
+button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: navy;
+}
+
+/* Add spacing between checkboxes and labels */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}

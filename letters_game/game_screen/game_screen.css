@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+}
+
+/* Container Styling */
+.game-screen-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Game Board */
+.game-board {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: navy;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.players-list,
+.players-score {
+  width: 30%;
+  text-align: center;
+}
+
+/* Timer */
+.timer {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: darkblue;
+}
+
+/* Word Formation Container */
+.word-formation-container {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input Box */
+.input-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 40%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+  text-align: center;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: navy; /* Original Blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #003366; /* Darker than Navy */
+}
+
+#complete-button, #next-turn-button {
+  background-color: lightgray;
+  color: black;
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#complete-button:hover, #next-turn-button:hover {
+  background-color: navy;
+  color: white;
+}
+
+#complete-button[disabled], #next-turn-button[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* Result Box */
+.result-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#result {
+  display: inline-block;
+  width: 30%;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  border: 2px solid #ccc;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .game-screen-container {
+      width: 95%;
+  }
+
+  input[type="text"], button {
+      width: 80%;
+  }
+}

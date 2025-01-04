@@ -1,0 +1,81 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Datepicker Container */
+.datepicker {
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header Section */
+.datepicker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  color: #cce5ff;
+}
+
+/* Days of the Week */
+.datepicker-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+  color: #6c757d;
+}
+
+/* Dates Section */
+.datepicker-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 10px;
+  gap: 10px;
+}
+
+/* Individual Date */
+.date {
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.date:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Empty Dates */
+.empty {
+  visibility: hidden;
+}
